@@ -1,8 +1,8 @@
 FROM alpine:latest
 MAINTAINER Jorge S. Mendes de Jesus <jorge.dejesus@geocat.net>
 
-ENV GDAL_VERSION 2.2.0
-ENV XERCES_VERSION 3.2.0
+ENV GDAL_VERSION 2.3.2
+ENV XERCES_VERSION 3.2.2
 
 RUN apk add --no-cache \
 	git \
