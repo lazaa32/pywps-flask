@@ -137,8 +137,8 @@ if __name__ == "__main__":
 
         if (pid == 0):
             os.setsid()
-            app.run(threaded=True,host=bind_host)
+            app.run(threaded=True,host=bind_host,debug=True)
         else:
             os._exit(0)
     else:
-        app.run(threaded=True,host=bind_host)
+        app.run(threaded=True,host=bind_host,debug=True)
