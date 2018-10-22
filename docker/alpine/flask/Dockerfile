@@ -47,7 +47,7 @@ RUN cd /tmp/gdal-${GDAL_VERSION}/swig/python \
 
 RUN rm -rf /var/cache/apk/*
 
-RUN git clone -b debug --single-branch https://github.com/geopython/pywps-flask.git
+RUN git clone -b debug --single-branch https://github.com/lazaa32/pywps-flask.git
  
 WORKDIR /pywps-flask
 RUN pip3 install -r requirements.txt
