@@ -21,7 +21,8 @@ RUN apk update && apk add --no-cache \
     g++ \
     libstdc++ \
     make \
-    swig  
+    swig \
+    curl
 RUN apk add --no-cache \
     --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing \
     geos \
@@ -46,7 +47,7 @@ RUN cd /tmp/gdal-${GDAL_VERSION}/swig/python \
 
 RUN rm -rf /var/cache/apk/*
 
-RUN git clone https://github.com/geopython/pywps-flask.git
+RUN git clone -b debug --single-branch https://github.com/geopython/pywps-flask.git
  
 WORKDIR /pywps-flask
 RUN pip3 install -r requirements.txt
