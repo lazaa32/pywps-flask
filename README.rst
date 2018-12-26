@@ -9,12 +9,13 @@ Check if Docker-engine is running.::
 Clone pywps-flask, switch to docker_extension branch::
 
     $ git clone https://github.com/lazaa32/pywps-flask.git
+    $ cd ./pywps-flask
     $ git checkout docker_extension
 
 Install libraries, build docker image (due to GDAL compiling lasts quite long)::
 
     $ pip3 install -r requirements.txt
-    $ cd pywps-flask/docker/isolation
+    $ cd ./docker/isolation
     $ docker build -t pywps .
 
 Check ``pywps.cfg``, set mode to ``docker`` and docker image name to ``pywps``::
