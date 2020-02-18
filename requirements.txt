@@ -4,7 +4,6 @@ jsonschema
 lxml
 OWSLib
 requests
-Shapely
 Werkzeug
 SQLAlchemy
 psutil
